@@ -4,7 +4,7 @@
 
 Single-column model computing outgoing longwave radiation (OLR) using ARTS/pyarts3.
 
-## 📋 Installation (Mamba Required)
+## Installation (Mamba Required)
 
 ```bash
 git clone https://github.com/YOURUSERNAME/clear-sky-radiative-transfer.git

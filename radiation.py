@@ -156,12 +156,12 @@ def plot_ola(spectral_radiance, flux):
 def main():
     # set up atmosphere
     t_profile, wmr_profile, pressure_levels = atmosphere.create_vertical_profile(T_SURF)
-    atmosphere = set_up_atmosphere(
+    atm_set = set_up_atmosphere(
         t_profile, pressure_levels, wmr_profile, MIXING_RATIO_CO2
     )
 
     # radiation calculations
-    spectral_radiance_toa = calculate_spectral_csa_emission(atmosphere)
+    spectral_radiance_toa = calculate_spectral_csa_emission(atm_set)
     total_flux = calculate_total_flux(spectral_radiance_toa)
 
     # plot results
